@@ -21,7 +21,8 @@ Options: 	[x] LXDE
 ```
 su -
 apt update
-apt -y install mc git git-crypt
+apt -y install mc git git-crypt pinentry-tty
+update-alternatives --set pinentry /usr/bin/pinentry-tty
 git clone git@github.com:rodolfoap/debian10.git
 cd debian10
 rsync -va pre/ /
