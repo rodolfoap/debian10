@@ -32,6 +32,12 @@ rsync -va pre/ /
 grep -q helpers /home/rodolfoap/.bashrc || { echo '. .bashrc_helpers' >> /home/rodolfoap/.bashrc; echo '. .bashrc_helpers' >> /root/.bashrc; }
 ```
 
-4. Restore all necessary keys.
+4. Restore all necessary keys, and then, as a normal user:
+```
+mkdir git
+cd git
+git clone git@github.com:rodolfoap/debian10.git
+```
+
 5. Continue with the sequence listed in the `prc/` directory
 6. `dat/` includes some scripts meant to finish the install. Run them as required.
