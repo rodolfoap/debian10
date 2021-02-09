@@ -3,3 +3,4 @@
 README.md !filter !diff
 key/* !filter !diff
 pre/* !filter !diff
+ini/**/ !filter !diff
