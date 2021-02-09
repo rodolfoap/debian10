@@ -26,8 +26,8 @@ update-alternatives --set pinentry /usr/bin/pinentry-tty
 git clone git@github.com:rodolfoap/debian10.git
 cd debian10
 rsync -va pre/ /
-echo '. bashrc_helpers' >> /home/rodolfoap/.bashrc
-echo '. bashrc_helpers' >> /root/.bashrc
+echo '. .bashrc_helpers' >> /home/rodolfoap/.bashrc
+echo '. .bashrc_helpers' >> /root/.bashrc
 ```
 
 4. Continue with the sequence listed in the `prc/` directory
