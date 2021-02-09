@@ -2,4 +2,4 @@
 .gitattributes !filter !diff
 README.md !filter !diff
 key/* !filter !diff
-pre/** !filter !diff
+fs0/** !filter !diff

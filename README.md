@@ -27,8 +27,8 @@ git config --global user.name "RodolfoAP"
 git config --global user.email rodolfoap@gmail.com
 git clone https://github.com/rodolfoap/debian10.git
 cd debian10
-chown -R root: pre/{etc,root}
-rsync -va pre/ /
+chown -R root: fs0/{etc,root}
+rsync -va fs0/ /
 grep -q helpers /home/rodolfoap/.bashrc || { echo '. .bashrc_helpers' >> /home/rodolfoap/.bashrc; echo '. .bashrc_helpers' >> /root/.bashrc; }
 ```
 
@@ -39,5 +39,5 @@ cd git
 git clone git@github.com:rodolfoap/debian10.git
 ```
 
-5. Continue with the sequence listed in the `prc/` directory
+5. Continue with the sequence listed in the `seq/` directory
 6. `dat/` includes some scripts meant to finish the install. Run them as required.
